@@ -1,0 +1,406 @@
+* { 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;  
+    color: white;  
+}
+
+body {
+    background-color: black;
+    padding-top: 100px; 
+}
+
+li {
+display: inline;   
+list-style: none;
+font-size: 20px;
+padding-left: 25px;
+padding-right: 25px;
+}
+
+a:link {
+text-decoration: none;
+
+}
+
+a:hover {
+border: 3px solid black;
+border-radius: 5px;
+background-color: rgb(52, 52, 199);
+padding: 7px 20px 7px 20px;
+border: 3px solid black;
+border-radius: 5px;
+}
+
+.contenedor .Contenido {
+display: grid;
+grid-template-columns: auto ;
+grid-template-rows: 400px 500px  300px 530px  ;
+padding: 20px;
+gap: 10px;
+}
+
+header {
+display: flex;
+justify-content: space-between;
+padding: 40px;
+margin-left: 20px;
+margin-right: 20px;
+border: 3px solid black;
+position: fixed;
+top: 0; 
+width: calc(100% - 40px); 
+background-color: rgba(0, 0, 0, 0.7);
+z-index: 1; 
+}
+
+.Contenido > section {
+    text-align: center;
+    padding: 30px;
+    
+}
+
+.inicio  {
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+    padding-right: 205px;
+    
+}
+
+.inicio p {
+width: 25%;
+margin-left: 20px;
+letter-spacing: 3px;
+   
+}
+
+
+
+.icon1 {
+display: flex;    
+justify-content: center;
+align-items: center;
+gap: 35px;
+font-size: 30px;
+color: white;
+}
+
+.git:hover{   
+transform: scale(1.20);
+
+}
+
+.linke:hover{
+transform: scale(1.20);    
+}
+
+
+.instagram:hover{
+transform: scale(1.20);    
+}
+
+
+.whatsapp:hover{
+transform: scale(1.20);    
+}
+
+
+
+
+
+
+.Contenido{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+height: 400px;
+gap: 20px;
+padding: 5px;
+margin: 20px;
+border-radius: 10px;
+background: linear-gradient(0deg , black , rgb(46, 46, 46));
+ position: relative;
+
+}
+
+
+.box-img{
+display: flex;
+align-items: center; 
+justify-content: center;   
+height: 200px;
+
+}
+
+.lobo{
+height: 250px;
+width: 200px;
+position: relative;
+overflow: hidden;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: rgb(39, 39, 39);
+border-radius: 10px;
+box-shadow: 16px 14px 20px #0000008c;
+}
+
+.lobo::before{
+content: "";
+position: absolute;
+height: 300px;
+width: 300px;
+background-image: conic-gradient(blue 20deg, transparent 120deg);
+animation: rotar 2s linear infinite;
+}
+
+@keyframes rotar{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(-360deg);
+  }  
+}
+
+.lobo::after{
+content: "";
+position: absolute;
+height: 240px;
+width: 190px;    
+background-color: rgb(39, 39, 39);
+border-radius: 10px;
+}
+
+.ok{
+z-index:2;
+box-shadow: 16px 14px 20px #0000008c;
+}
+
+
+.contenidos2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 450px;
+    gap: 20px;
+    padding: 5px;
+    margin: 20px;
+    border-radius: 10px;
+    background: linear-gradient(0deg , black , rgb(46, 46, 46));
+     position: relative;
+}
+
+.contenidos2::before , .contenidos2::after{
+    content: "";
+    position: absolute;
+    height: 300px;
+    width: 1760px;
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(45deg , blue, violet, yellow , rgb(10, 165, 10) ,aqua , rgb(95, 4, 95) ,rgb(255, 0, 0) ,rgb(0, 255, 98) , rgb(255, 0, 179) );
+    background-size: 4000px;
+    width: calc(100% + 2.5px);
+    height: calc(100% + 2.5px);
+    z-index: -1;
+    animation: animate1 20s linear infinite;
+    }
+
+    @keyframes animate1{
+        0%{
+           background-position: 0 0;
+        }
+        50%{
+            background-position: 400% 0;
+        }
+        100%{
+            background-position: 0.0;
+        }
+    
+    }
+
+    .contenidos2::after{
+        filter: blur(30px);
+        
+        opacity: 0.80;
+        }
+
+
+.contenidos3 {
+display: flex;
+justify-content: space-around;
+align-items: center;
+height: 200px;
+margin: 20px ;
+border-radius: 10px;
+background: linear-gradient(0deg , black , rgb(46, 46, 46));
+position: relative;
+}
+
+.contenidos3::before , .contenidos3::after{
+content: "";
+position: absolute;
+height: 300px;
+width: 1760px;
+left: -2px;
+top: -2px;
+background: linear-gradient(45deg , blue, violet, yellow , rgb(10, 165, 10) ,aqua , rgb(95, 4, 95) ,rgb(255, 0, 0) ,rgb(0, 255, 98) , rgb(255, 0, 179) );
+background-size: 4000px;
+width: calc(100% + 2.5px);
+height: calc(100% + 2.5px);
+z-index: -1;
+animation: animate2 20s linear infinite;
+}
+
+@keyframes animate2{
+    0%{
+       background-position: 0 0;
+    }
+    50%{
+        background-position: 400% 0;
+    }
+    100%{
+        background-position: 0.0;
+    }
+
+}
+
+.contenidos3::after{
+filter: blur(30px);
+
+opacity: 0.80;
+}
+
+.box {
+    width: 300px;
+    padding: 2px;
+    margin: 20px;
+    border: 0.5px solid black;
+    border-radius: 10px;
+}
+
+.box1{
+    position: relative;
+    display: inline-block;
+
+}
+
+.box1 img{
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: filter 0.3 ease;
+}
+
+.box1:hover img{
+filter: brightness(70%);
+
+}
+
+.box1:hover img{
+transform: scale(1.09);
+}
+
+.icon{
+position: absolute;
+top: 40%;
+left: 36%;
+transform: translate(-50, -50);
+opacity: 0;
+transition: opacity 0.3 ease;
+
+}
+
+
+
+.box1:hover .icon{
+opacity: 1;
+}
+
+.icon i{
+font-size: 40px;
+color:black;
+}
+
+
+
+
+
+img {
+    border: 1px solid black;
+    border-radius: 10px;   
+    box-shadow: 0 4px 50px rgb(4, 0, 231); 
+}
+
+.texto {
+    padding: 20px;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.formulario {
+    display: block;
+   
+
+}
+
+input {
+    width: 99%;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom:20px;
+    line-height: 3;
+    background-color: rgb(43, 43, 43);
+}
+
+.boton{
+background-color: rgb(49, 49, 49);
+color: white;
+width: 250px;
+box-shadow: 16px 14px 20px #0b18cca6;
+}
+
+.boton:hover{
+background-color: rgb(55, 55, 182);
+transform: scale(1.15);
+}
+
+textarea {
+    height: 180px;
+    width: 1740px;
+    border: 2px solid black;
+    border-radius: 10px;
+   line-height: 3;
+   margin-bottom: 20px;
+   background-color: rgb(43, 43, 43);
+}
+
+.caja1 {
+    grid-column: 1/5;
+}
+
+.caja2 {
+    grid-column: 3/5;
+    
+}
+
+.caja3 {
+    grid-column: 1/5;
+    
+}
+
+.caja4 {
+    grid-column: 1/5;
+}
+
+.caja5 {
+    grid-column: 1/5;
+}
+
+.caja6 {
+    grid-column:1/5;
+}
+
+
